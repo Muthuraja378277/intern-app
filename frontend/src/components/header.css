@@ -1,0 +1,125 @@
+header {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    color: white; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul li {
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+}
+
+.logo1 {
+    margin-right: auto;
+}
+
+.Profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.Profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.bi-caret-up-fill,
+.bi-caret-down-fill {
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.auth .btn1,
+.auth .btn2 {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 10px;
+    background: none;
+    color: white;
+}
+
+.auth .btn1:hover,
+.auth .btn2:hover {
+    background-color: #34495e;
+}
+
+.bt-log {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.bt-log:hover {
+    background-color: #34495e;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    .auth {
+        flex-direction: column;
+    }
+
+    .auth .btn1,
+    .auth .btn2 {
+        margin: 5px 0;
+    }
+
+    .bt-log {
+        margin: 5px 0;
+    }
+}
